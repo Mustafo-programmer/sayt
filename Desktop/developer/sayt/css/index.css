@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c2c2c;
+}
+
+#categories {
+  padding: 20px;
+}
+
+.category-btn {
+  display: inline-block;
+  padding: 15px;
+  margin: 10px;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.category-btn:hover {
+  background-color: #555;
+}
+
+.category-btn::after {
+  content: attr(data-desc);
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  display: none;
+  z-index: 10;
+}
+
+.category-btn:hover::after {
+  display: block;
+}
+
+/* Стили для списка нейросетей */
+.network-list {
+  padding: 20px;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+#search-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.filter-container h3 {
+  margin: 0 0 10px 0;
+}
+
+.filter-btn {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: #555;
+}
+
+.filter-btn.active {
+  background-color: #666;
+}
+
+#selected-category {
+  margin-bottom: 20px;
+}
+
+.networks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 столбца */
+  gap: 20px;
+}
+
+.network-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.network-btn:hover {
+  background-color: #555;
+}
+
+.network-btn img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.network-btn h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.network-btn::after {
+  content: attr(data-desc);
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  display: none;
+  z-index: 10;
+  width: 200px;
+  text-align: center;
+}
+
+.network-btn:hover::after {
+  display: block;
+}
+
+/* Стили для кружка статуса */
+.status-circle {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status-paid {
+  background-color: red;
+}
+
+.status-free {
+  background-color: green;
+}
+
+.status-mixed {
+  background-color: yellow;
+}
+.nav-links {
+  list-style: none;
+  padding-left: 0;
+  display: flex; /* чтобы ссылки были в строку */
+  gap: 20px;     /* отступы между ними */
+}
+.navbar{
+  width: 100%;
+}
+.navbar_div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2c2c2c;
+
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff; /* Цвет текста */
+  font-size: 18px; /* Размер текста */
+  padding: 10px; /* Отступы вокруг текста */
+  transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+.nav-links li a:hover {
+  background-color: #555; /* Цвет фона при наведении */
+  border-radius: 5px; /* Скругление углов */
+}
+.logo{
+text-decoration: none;
+color: #fff;
+font-size: 30px;
+}

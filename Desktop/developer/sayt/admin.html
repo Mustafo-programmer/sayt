@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель</title>
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+<body>
+    <header>
+        <h1>Админ-панель</h1>
+        <a href="index.html" class="back-btn">На главную</a>
+        <a href="login.html" class="back-btn">Логин</a>
+    </header>
+    <main>
+        <section>
+            <h2>Добавить/Редактировать нейросеть</h2>
+            <form id="network-form">
+                <input type="text" id="network-name" placeholder="Название нейросети" required>
+                <textarea id="network-desc" placeholder="Описание нейросети" required></textarea>
+                <input type="text" id="network-url" placeholder="URL нейросети" required>
+                <input type="file" id="network-logo" accept="image/*">
+                <select id="network-status" required>
+                    <option value="free">Бесплатно</option>
+                    <option value="paid">Платно</option>
+                    <option value="mixed">Смешанно</option>
+                </select>
+                <select id="network-categories" multiple required></select>
+                <input type="hidden" id="edit-index" value="-1">
+                <button type="submit">Сохранить</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Добавить категорию</h2>
+            <form id="category-form">
+                <input type="text" id="category-name" placeholder="Название категории" required>
+                <textarea id="category-desc" placeholder="Описание категории" required></textarea>
+                <button type="submit">Добавить</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Список категорий</h2>
+            <ul id="category-list-admin"></ul>
+        </section>
+
+        <section>
+            <h2>Список нейросетей</h2>
+            <ul id="network-list-admin"></ul>
+        </section>
+    </main>
+    <script src="./js/admin.js"></script>
+</body>
+</html>

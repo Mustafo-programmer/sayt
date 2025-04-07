@@ -1,0 +1,17 @@
+{
+  "name": "sayt",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Простой сервер на Express для загрузки логотипов и работы с нейросетями",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "multer": "^1.4.5-lts.2"
+  }
+}

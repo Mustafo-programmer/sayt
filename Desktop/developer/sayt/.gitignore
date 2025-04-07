@@ -1,0 +1,15 @@
+# Игнорируем системные файлы Windows
+Thumbs.db
+Desktop.ini
+
+# Игнорируем папки и файлы, связанные с приложениями
+*.log
+node_modules/
+.vscode/
+.cache/
+.DS_Store
+
+# Игнорируем личные данные пользователя
+*.bak
+*.swp
+*.tmp

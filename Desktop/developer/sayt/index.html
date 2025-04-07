@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нейросети</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_div">
+            <a href="index.html" class="logo">Нейросети</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="login.html">Админ-панель</a></li>
+                <li><a href="login.html">Вход</a></li>
+                <li><a href="https://mysocial-ma.netlify.app/">Связь</a></li>
+            </ul>
+        </div>
+      </nav>      
+    <header>
+        <h1>Добро пожаловать в мир нейросетей</h1>
+        <p>Узнайте о возможностях современных технологий ИИ</p>
+    </header>
+    <main>
+        <section id="categories">
+            <h2>Категории нейросетей</h2>
+            <div id="category-list">
+                <!-- Категории будут добавляться через JS -->
+            </div>
+        </section>
+        <section id="network-list" class="network-list">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Поиск нейросетей...">
+            </div>
+            <div class="filter-container">
+                <h3>Фильтр по доступности:</h3>
+                <button class="filter-btn" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="free">Бесплатно</button>
+                <button class="filter-btn" data-filter="paid">Платно</button>
+                <button class="filter-btn" data-filter="mixed">Смешанно</button>
+            </div>
+            <h2 id="selected-category">Выберите категорию</h2>
+            <div id="networks" class="networks-grid">
+                <!-- Нейросети будут добавляться через JS -->
+            </div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>

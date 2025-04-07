@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в админ-панель</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="login-container" id="login-section">
+        <h2>Вход в админ-панель</h2>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Электронная почта" required>
+            <input type="password" id="password" placeholder="Пароль" required>
+            <button type="submit">Войти</button>
+        </form>
+        <a href="index.html">На главную</a>
+    </div>
+    <div class="admin-container" id="admin-section" style="display: none;">
+        <h2>Управление логинами</h2>
+        <form id="add-login-form">
+            <input type="email" id="new-email" placeholder="Новый email" required>
+            <input type="password" id="new-password" placeholder="Новый пароль" required>
+            <button type="submit">Добавить</button>
+        </form>
+        <ul id="login-list"></ul>
+        <button id="logout-btn">Выйти</button>
+        <a href="admin.html" class="admin-btn">Перейти в админ-панель</a>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+</html>
